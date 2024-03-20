@@ -1,0 +1,8 @@
+tensorflow-cpu
+pandas
+pyarrow
+scikit-learn
+matplotlib
+pylint
+autopep8
+tabulate

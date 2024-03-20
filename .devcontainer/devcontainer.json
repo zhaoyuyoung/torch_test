@@ -1,0 +1,26 @@
+{
+  "name": "Python 3.11 with TensorFlow",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "3.11-bullseye"
+    }
+  },
+  "onCreateCommand": "echo PS1='$ ' >> ~/.bashrc",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "GitHub.github-vscode-theme",
+        "dbaeumer.vscode-eslint",
+        "ms-toolsai.tensorboard",
+        "ms-azuretools.vscode-docker",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "postAttachCommand": "git pull --ff-only"
+}
