@@ -10,5 +10,5 @@ COPY requirements.txt .
 # Install any needed packages specified in `requirements.txt`.
 RUN pip install --no-cache-dir -r requirements.txt
 
-Run apt-get update && apt-get -y instsall --no-install-recommends \
+Run apt-get update && apt-get -y install --no-install-recommends \
     xauth
