@@ -23,13 +23,4 @@
     3000
   ],
   "postAttachCommand": "git pull --ff-only",
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-        "version": "latest"
-    }
-  },
-  "remoteEnv": {
-     "DISPLAY": "localhost:10.0"
-  }
-
 }
